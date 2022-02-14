@@ -11,7 +11,7 @@ module.exports = {
 };
 
 async function getAll() {
-    return await City.find();
+    return await City.find().sort( { date: -1 } );
 }
 
 async function getById(id) {
